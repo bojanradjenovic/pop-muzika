@@ -120,6 +120,7 @@ p {
 }
 
 .nav-link {
+  font-family: 'Georgia', serif;
   color: white;
   text-decoration: none;
   padding: 14px 20px;
@@ -169,7 +170,15 @@ p {
 .dropdown-menu a:hover {
   background-color: #ddd;
 }
-
+/* Slideshow container */
+.slideshow-container {
+  width: 150vh; /* Set width to 100% to take up the whole width of the screen */
+  position: relative;
+  margin: auto;
+  height: 75vh; /* Set height to 1/4 of the viewport height */
+  overflow: hidden;
+ 
+}
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
   .navbar-container {
@@ -189,16 +198,16 @@ p {
     top: 60px;
     right: 10px;
   }
+  .slideshow-container {
+    width: 60vh; /* Set width to 100% to take up the whole width of the screen */
+    position: relative;
+    margin: auto;
+    height: 30vh; /* Set height to 1/4 of the viewport height */
+    overflow: hidden;
+  }
 }
 
-/* Slideshow container */
-.slideshow-container {
-  width: 100%; /* Set width to 100% to take up the whole width of the screen */
-  position: relative;
-  margin: auto;
-  height: 25vh; /* Set height to 1/4 of the viewport height */
-  overflow: hidden;
-}
+
 
 .slideshow-container::before {
   content: "";
@@ -215,11 +224,20 @@ p {
 }
 
 /* Hide the images by default */
-.mySlides {
+.mySlides1 {
   display: none;
 }
 
-.mySlides img {
+.mySlides1 img {
+  height: 100%; /* Make images take up the full height of the container */
+  width: 100%; /* Make images take up the full width of the container */
+  object-fit: cover; /* Ensure images cover the container without distortion */
+}
+.mySlides2 {
+  display: none;
+}
+
+.mySlides2 img {
   height: 100%; /* Make images take up the full height of the container */
   width: 100%; /* Make images take up the full width of the container */
   object-fit: cover; /* Ensure images cover the container without distortion */
