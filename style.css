@@ -16,83 +16,12 @@ p {
     margin-left: 10px;
     margin-right: 10px;
 }
-* {box-sizing:border-box}
-
-* {box-sizing:border-box}
-
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
+   /* width: 150vh; */ /* Set width to 100% to take up the whole width of the screen */
+   position: relative;
+   overflow: hidden;
+   margin: 0px 2em;
 }
 
 /* Fading animation */
@@ -107,23 +36,30 @@ p {
 }
 /* Navigation Bar */
 .navbar {
+  position: sticky;
+  z-index: 9999;
+  top: 0px;
+  backdrop-filter: blur(5px);
   width: 100%;
-  background-color: #333;
+  background-color: white;
   overflow: hidden;
 }
 
 .navbar-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 14px 20px;
+  padding: 10px 20px;
 }
 
 .nav-link {
   font-family: 'Georgia', serif;
-  color: white;
   text-decoration: none;
+  color: black;
   padding: 14px 20px;
+  border:rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5); /* Subtle light text shadow */
+
 }
 
 .nav-link:hover {
@@ -136,23 +72,32 @@ p {
   display: none;
   flex-direction: column;
   cursor: pointer;
-  width: 30px;
+  width: 25px; /* Slightly smaller width */
   margin-left: auto;
+  background-color: #333; /* Dark background color */
+  border-radius: 3px; /* Rounded corners */
+  padding: 8px; /* Slightly smaller padding */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+  opacity: 90%
+}
+
+.hamburger-menu:hover {
+  background-color: #555; /* Change background color on hover */
 }
 
 .hamburger-menu .bar {
-  height: 4px;
+  height: 2.5px; /* Slightly thinner bars */
   width: 100%;
-  background-color: white;
-  margin: 3px 0;
-  transition: 0.4s;
+  background-color: white; /* White bars for contrast */
+  margin: 3px 0; /* Space between bars */
+  transition: all 0.3s ease; /* Smooth transition for bar changes */
 }
-
 /* Dropdown Menu */
 .dropdown-menu {
   display: none;
   flex-direction: column;
-  position: absolute;
+  position: fixed;
   top: 50px;
   right: 10px;
   background-color: white;
@@ -170,14 +115,13 @@ p {
 .dropdown-menu a:hover {
   background-color: #ddd;
 }
-/* Slideshow container */
 .slideshow-container {
-  width: 150vh; /* Set width to 100% to take up the whole width of the screen */
+  width: 150vb;  /* Set width to 100% to take up the whole width of the screen */
   position: relative;
-  margin: auto;
-  height: 75vh; /* Set height to 1/4 of the viewport height */
+  /* height: 75vh; */
+  /*t height to 1/4 of the viewport height */
   overflow: hidden;
- 
+  margin: auto;
 }
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
@@ -189,7 +133,10 @@ p {
   .nav-link {
     display: none;
   }
-
+  .navbar {
+    background-color: transparent;
+    backdrop-filter: none;
+  }
   .hamburger-menu {
     display: flex;
   }
@@ -199,10 +146,10 @@ p {
     right: 10px;
   }
   .slideshow-container {
-    width: 60vh; /* Set width to 100% to take up the whole width of the screen */
+    width: 60vh;  /* Set width to 100% to take up the whole width of the screen */
     position: relative;
     margin: auto;
-    height: 30vh; /* Set height to 1/4 of the viewport height */
+    /*height: 30vh; /* Set height to 1/4 of the viewport height */
     overflow: hidden;
   }
 }
@@ -222,6 +169,7 @@ p {
   width: 100%;
   height: 100%;
 }
+
 
 /* Hide the images by default */
 .mySlides1 {
