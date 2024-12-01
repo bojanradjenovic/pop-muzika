@@ -18,7 +18,6 @@ p {
 }
 /* Slideshow container */
 .slideshow-container {
-   /* width: 150vh; */ /* Set width to 100% to take up the whole width of the screen */
    position: relative;
    overflow: hidden;
    margin: 0px 2em;
@@ -72,14 +71,14 @@ p {
   display: none;
   flex-direction: column;
   cursor: pointer;
-  width: 25px; /* Slightly smaller width */
+  width: 25px; 
   margin-left: auto;
-  background-color: #333; /* Dark background color */
-  border-radius: 3px; /* Rounded corners */
-  padding: 8px; /* Slightly smaller padding */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
-  transition: background-color 0.3s ease; /* Smooth transition for background color */
-  opacity: 90%
+  background-color: #333; 
+  border-radius: 3px; 
+  padding: 8px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  transition: background-color 0.3s ease; 
+  opacity: 90%;
 }
 
 .hamburger-menu:hover {
@@ -116,10 +115,8 @@ p {
   background-color: #ddd;
 }
 .slideshow-container {
-  width: 150vb;  /* Set width to 100% to take up the whole width of the screen */
+  width: 150vb;
   position: relative;
-  /* height: 75vh; */
-  /*t height to 1/4 of the viewport height */
   overflow: hidden;
   margin: auto;
 }
@@ -146,10 +143,9 @@ p {
     right: 10px;
   }
   .slideshow-container {
-    width: 60vh;  /* Set width to 100% to take up the whole width of the screen */
+    width: 50vh;
     position: relative;
     margin: auto;
-    /*height: 30vh; /* Set height to 1/4 of the viewport height */
     overflow: hidden;
   }
 }
@@ -170,8 +166,6 @@ p {
   height: 100%;
 }
 
-
-/* Hide the images by default */
 .mySlides1 {
   display: none;
 }
