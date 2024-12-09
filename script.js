@@ -7,7 +7,7 @@ document.querySelector('.hamburger-menu').addEventListener('click', function() {
     }
   });
   let slideIndex = 0;
-  let slides = document.getElementsByClassName("mySlides1");
+  let slides = document.getElementsByClassName("mySlides");
       showSlides();
       function showSlides() {
         for (i = 0; i < slides.length; i++) {
@@ -18,3 +18,4 @@ document.querySelector('.hamburger-menu').addEventListener('click', function() {
         slides[slideIndex-1].style.display = "block";
         setTimeout(showSlides, 2500); // Change image every 2.5 seconds
       }
+    
