@@ -46,15 +46,11 @@ if (languageToggleRs) {
 
 if (languageToggleMobileRs) {
   languageToggleMobileRs.addEventListener('click', function() {
-    if(currentPage === '/pop-muzika/-en.html') {
-      localStorage.setItem('language', 'serbian');
-      window.location.href = '/pop-muzika/';
-    }
-    if(currentPage === '/pop-muzika/index.html') {
-      localStorage.setItem('language', 'serbian');
-      window.location.href = '/pop-muzika/-en.html';
-    }
     localStorage.setItem('language', 'serbian');
+    console.log(currentPage);
+    if (currentPage === '/pop-muzika/-en.html') {
+      window.location.href = '/pop-muzika/';
+    } 
     location.reload();
   });
 }
@@ -64,6 +60,9 @@ const languageToggleMobileEn = document.getElementById('language-toggle-mobile-e
 if (languageToggleEn) {
   languageToggleEn.addEventListener('click', function() {
     localStorage.setItem('language', 'english');
+    if (currentPage === '/pop-muzika/index.html') {
+      window.location.href = '/pop-muzika/-en.html';
+    }
     location.reload();
   });
 }
