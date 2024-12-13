@@ -29,28 +29,29 @@ const languageToggleRs = document.getElementById('language-toggle-rs');
 const languageToggleMobileRs = document.getElementById('language-toggle-mobile-rs');
 
 if (languageToggleRs) {
-  languageToggleRs.addEventListener('click', function() {
-    localStorage.setItem('language', 'serbian');
-    location.reload();
-  });
   if(currentPage === '-en.html' && language === 'serbian') {
     window.location.href = '/pop-muzika/index.html';
   }
   if(currentPage === 'index.html' && language === 'serbian') {
     window.location.href = '/pop-muzika/-en.html';
   }
+  languageToggleRs.addEventListener('click', function() {
+    localStorage.setItem('language', 'serbian');
+    location.reload();
+  });
+
 }
 
 if (languageToggleMobileRs) {
+  if(currentPage === '-en.html' && language === 'serbian') {
+    window.location.href = '/pop-muzika/index.html';
+  }
+  if(currentPage === 'index.html' && language === 'serbian') {
+    window.location.href = '/pop-muzika/-en.html';
+  }
   languageToggleMobileRs.addEventListener('click', function() {
     localStorage.setItem('language', 'serbian');
     location.reload();
-    if(currentPage === '-en.html' && language === 'serbian') {
-      window.location.href = '/pop-muzika/index.html';
-    }
-    if(currentPage === 'index.html' && language === 'serbian') {
-      window.location.href = '/pop-muzika/-en.html';
-    }
   });
 }
 const languageToggleEn = document.getElementById('language-toggle-en');
