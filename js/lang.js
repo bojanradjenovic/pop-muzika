@@ -33,12 +33,24 @@ if (languageToggleRs) {
     localStorage.setItem('language', 'serbian');
     location.reload();
   });
+  if(currentPage === '-en.html' && language === 'serbian') {
+    window.location.href = '/pop-muzika/index.html';
+  }
+  if(currentPage === 'index.html' && language === 'serbian') {
+    window.location.href = '/pop-muzika/-en.html';
+  }
 }
 
 if (languageToggleMobileRs) {
   languageToggleMobileRs.addEventListener('click', function() {
     localStorage.setItem('language', 'serbian');
     location.reload();
+    if(currentPage === '-en.html' && language === 'serbian') {
+      window.location.href = '/pop-muzika/index.html';
+    }
+    if(currentPage === 'index.html' && language === 'serbian') {
+      window.location.href = '/pop-muzika/-en.html';
+    }
   });
 }
 const languageToggleEn = document.getElementById('language-toggle-en');
@@ -48,24 +60,13 @@ if (languageToggleEn) {
   languageToggleEn.addEventListener('click', function() {
     localStorage.setItem('language', 'english');
     location.reload();
-    if(currentPage === '-en.html' && language === 'serbian') {
-      window.location.href = '/pop-muzika/index.html';
-    }
-    if(currentPage === 'index.html' && language === 'serbian') {
-      window.location.href = '/pop-muzika/-en.html';
-    }
   });
 }
 if (languageToggleMobileEn) {
   languageToggleMobileEn.addEventListener('click', function() {
     localStorage.setItem('language', 'english');
     location.reload();
-    if(currentPage === '-en.html' && language === 'serbian') {
-      window.location.href = '/pop-muzika/index.html';
-    }
-    if(currentPage === 'index.html' && language === 'serbian') {
-      window.location.href = '/pop-muzika/-en.html';
-    }
+
   });
 }
 
