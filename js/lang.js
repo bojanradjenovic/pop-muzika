@@ -7,6 +7,9 @@ if (currentPage.includes('-en') && language === 'serbian') {
 if(currentPage === '-en.html' && language === 'serbian') {
   window.location.href = '/pop-muzika/index.html';
 }
+if(currentPage === 'index.html' && language === 'serbian') {
+  window.location.href = '/pop-muzika/-en.html';
+}
 if (!currentPage.includes('-en') && language === 'english') {
   const englishPage = currentPage.replace(/(\.html)?$/, '-en.html');
   window.location.href = englishPage;
