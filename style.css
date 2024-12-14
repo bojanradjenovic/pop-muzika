@@ -168,7 +168,7 @@ p {
 .slideshow-container::before {
   content: "";
   display: block;
-  padding-top: 56.25%; /* 16:9 aspect ratio (9/16 = 0.5625) */
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
 }
 
 .slideshow-container > div {
@@ -235,7 +235,7 @@ h1.dark-mode {
   position: absolute;
   right: 5px;
 }
-#language-toggle-en, #language-toggle-rs{
+#language-toggle-en, #language-toggle-rs {
   margin-left: 10px;
   text-decoration: none;
   color: black;
@@ -256,4 +256,72 @@ h1.dark-mode {
 #language-toggle-en.dark-mode:hover, #language-toggle-rs.dark-mode:hover{
   background-color: black;
   color: white;
+}
+form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+form p {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+form input[type="radio"],
+form input[type="text"],
+form textarea,
+form select {
+  margin-bottom: 15px;
+ 
+}
+form input[type="text"], form textarea{
+  width: 96% !important;
+
+}
+form input[type="text"],
+form textarea,
+form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form input[type="button"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form input[type="button"]:hover {
+  background-color: #45a049;
+}
+body.dark-mode form {
+  background-color: #333;
+  color: #fff;
+}
+
+body.dark-mode form input[type="radio"],
+body.dark-mode form input[type="text"],
+body.dark-mode form textarea,
+body.dark-mode form select {
+  background-color: #555;
+  color: #fff;
+  border: 1px solid #777;
+}
+
+body.dark-mode form input[type="button"] {
+  background-color: #4CAF50;
+  color: white;
+}
+
+body.dark-mode form input[type="button"]:hover {
+  background-color: #45a049;
 }

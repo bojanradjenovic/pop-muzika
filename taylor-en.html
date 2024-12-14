@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taylor Swift</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
 </head>
 <body>
     <nav class="navbar">
@@ -64,11 +65,35 @@
     </div>
     </div>
   <br>
+  <form>
+    <p>What was Taylor Swift's first album?</p>
+    <input type="radio" name="answer1" value="0"> Fearless
+    <input type="radio" name="answer2" value="5"> Taylor Swift
+    <input type="radio" name="answer3" value="0"> Speak Now
+    <input type="radio" name="answer4" value="0"> Red
+    
+    <p>Which song won a Grammy for Song of the Year in 2010?</p>
+    <input type="text" name="ans2" maxlength="30px">
+    
+    <p>List some of Taylor Swift's most famous songs:</p>
+    <textarea name="ans3" cols="60"></textarea>
+    
+    <p>Which album did Taylor Swift release in 2020?</p>
+    <select name="ans4" size="1">
+      <option value="0">Lover</option>
+      <option value="5">folklore</option>
+      <option value="0">reputation</option>
+      <option value="0">1989</option>
+    </select>
+    
+    <p><input type="button" value="Submit Answers"></p>
+  </form>  
   <div style="display: flex; justify-content: center;">
     <iframe style="border-radius:12px; width: 70%;" src="https://open.spotify.com/embed/playlist/3RLuiz7tLDySpMHo8oRxUo?utm_source=generator&theme=0" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
   </div>  
   <script src="js/script2.js"></script>
   <script src="js/darkmode.js"></script>
   <script src="js/lang.js"></script>
+  <script src="js/quiz.js"></script>
 </body>
 </html>
