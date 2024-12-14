@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pop muzika</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
 </head>
 <body>
   <nav class="navbar">
@@ -52,9 +53,30 @@
 <p>Pop muzika je muzički žanr koji je nastao u 50-im godinama prošlog veka. Pop muzika je skraćenica od „popularna muzika“.</p>
 <p>Pop muzika je jedan od najpopularnijih i najrasprostranjenijih muzičkih žanrova koji karakterišu zarazni ritmovi, jednostavne melodije i tekstovi koji su često fokusirani na teme ljubavi, svakodnevnog života i emocija.</p>
 <p>Pop muzika se razvila sredinom 20. veka, iz žanrova kao što su rock 'n' roll, blues i country. Tokom godina, pop je postao globalni fenomen, integrirajući elemente raznih žanrova, uključujući elektroniku, R&B, hip hop i dance muziku. Ikone poput Michaela Jacksona, Madonne i Britney Spears obeležile su zlatno doba popa, dok savremeni izvođači kao što su Taylor Swift, The Weeknd, Charli xcx nastavljaju da osvajaju publiku širom sveta.</p>
+<form>
+  <p>Pop muzika je nastala u:</p>
+  <input type="radio" name="answer1" value="0">40-im godinama
+  <input type="radio" name="answer2" value="5">50-im godinama
+  <input type="radio" name="answer3" value="0">60-im godinama
+  <input type="radio" name="answer4" value="0">70-im godinama
 
+  <p> Pop muzika je skraćenica od: </p>
+  <input type="text" name="ans2" maxlength="30px">
+
+  <p>Koji su neki od najpoznatijih izvođača pop muzike?</p>
+  <textarea name="ans3" cols="60"></textarea>
+
+  <p>Pop muzika se razvila iz kojih žanrova?</p>
+  <select name="ans4" size="1">
+    <option value="5">Rock 'n' roll, blues i country</option>
+    <option value="0">Jazz, opera i klasična muzika</option>
+    <option value="0">Hip hop, reggae i metal</option>
+  </select>
+  <p><input type="button" value="Predaj odgovore"></p>
+</form>
 <script src="js/script.js"></script>
 <script src="js/darkmode.js"></script>
 <script src="js/lang2.js"></script>
+<script src="js/quiz.js"></script>
 </body>
 </html>

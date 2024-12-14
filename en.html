@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="sr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pop muzika</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
 </head>
 <body>
   <nav class="navbar">
@@ -52,10 +53,31 @@
 <p>Pop music is a musical genre that originated in the 1950s. Pop music is short for ‘popular music’.</p>
 <p>Pop music is one of the most popular and widespread musical genres characterized by catchy rhythms, simple melodies, and lyrics often focused on themes of love, everyday life, and emotions.</p>
 <p>Pop music developed in the mid-20th century from genres like rock 'n' roll, blues, and country. Over the years, pop has become a global phenomenon, incorporating elements from various genres including electronic, R&B, hip hop, and dance music. Icons like Michael Jackson, Madonna, and Britney Spears marked the golden age of pop, while contemporary artists like Taylor Swift, The Weeknd, and Charli xcx continue to captivate audiences worldwide.</p>
+<form>
+  <p>Pop music originated in the:</p>
+  <input type="radio" name="answer1" value="0"> 1940s
+  <input type="radio" name="answer2" value="5"> 1950s
+  <input type="radio" name="answer3" value="0"> 1960s
+  <input type="radio" name="answer4" value="0"> 1970s
 
+  <p>What does Pop music stand for?</p>
+  <input type="text" name="ans2" maxlength="30px">
 
+  <p>Who are some of the most famous pop music artists?</p>
+  <textarea name="ans3" cols="60"></textarea>
+
+  <p>Pop music developed from which genres?</p>
+  <select name="ans4" size="1">
+    <option value="5">Rock 'n' roll, blues, and country</option>
+    <option value="0">Jazz, opera, and classical music</option>
+    <option value="0">Hip hop, reggae, and metal</option>
+  </select>
+  
+  <p><input type="button" value="Submit Answers"></p>
+</form>
 <script src="js/script.js"></script>
 <script src="js/darkmode.js"></script>
 <script src="js/lang2.js"></script>
+<script src="js/quiz.js"></script>
 </body>
 </html>
