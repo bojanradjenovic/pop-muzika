@@ -1,7 +1,7 @@
 const language = localStorage.getItem('language');
 const currentPage = window.location.pathname;
 if (currentPage.includes('en') && language === 'serbian') {
-  window.location.href = '/';
+  window.location.href = '/pop-muzika/';
 }
 
 if (!currentPage.includes('en') && language === 'english') {
@@ -31,14 +31,14 @@ const languageToggleMobileRs = document.getElementById('language-toggle-mobile-r
 if (languageToggleRs) {
   languageToggleRs.addEventListener('click', function() {
     localStorage.setItem('language', 'serbian');
-    window.location.href = '/';
+    window.location.href = '/pop-muzika/';
   });
 }
 
 if (languageToggleMobileRs) {
   languageToggleMobileRs.addEventListener('click', function() {
     localStorage.setItem('language', 'serbian');
-    window.location.href = '/';
+    window.location.href = '/pop-muzika/';
   });
 }
 
