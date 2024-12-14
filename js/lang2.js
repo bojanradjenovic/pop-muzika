@@ -1,11 +1,11 @@
 const language = localStorage.getItem('language');
 const currentPage = window.location.pathname;
-if (currentPage.includes('-en') && language === 'serbian') {
-  window.location.href = 'index.html';
+if (currentPage.includes('en') && language === 'serbian') {
+  window.location.href = '/';
 }
 
-if (!currentPage.includes('-en') && language === 'english') {
-  window.location.href = '-en.html';
+if (!currentPage.includes('en') && language === 'english') {
+  window.location.href = 'en.html';
 }
 
 async function redirectByLocation() {
@@ -16,8 +16,7 @@ async function redirectByLocation() {
     const redirectCountries = ['RS', 'ME', 'HR', 'BA']; 
     if (!redirectCountries.includes(country)) {
       localStorage.setItem('language', 'english');
-      const englishPage = currentPage.replace(/(\.html)?$/, '-en.html'); 
-      window.location.href = englishPage;
+      window.location.href = 'en.html';
     } else {
       localStorage.setItem('language', 'serbian');
     }
@@ -32,14 +31,14 @@ const languageToggleMobileRs = document.getElementById('language-toggle-mobile-r
 if (languageToggleRs) {
   languageToggleRs.addEventListener('click', function() {
     localStorage.setItem('language', 'serbian');
-    window.location.href = 'index.html';
+    window.location.href = '/';
   });
 }
 
 if (languageToggleMobileRs) {
   languageToggleMobileRs.addEventListener('click', function() {
     localStorage.setItem('language', 'serbian');
-    window.location.href = 'index.html';
+    window.location.href = '/';
   });
 }
 
@@ -49,14 +48,14 @@ const languageToggleMobileEn = document.getElementById('language-toggle-mobile-e
 if (languageToggleEn) {
   languageToggleEn.addEventListener('click', function() {
     localStorage.setItem('language', 'english');
-      window.location.href = '-en.html';
+    window.location.href = 'en.html';
   });
 }
 
 if (languageToggleMobileEn) {
   languageToggleMobileEn.addEventListener('click', function() {
     localStorage.setItem('language', 'english');
-      window.location.href = '-en.html';
+    window.location.href = 'en.html';
   });
 }
 
